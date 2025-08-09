@@ -1,0 +1,18 @@
+local tarefas = {}
+function adicionar_tarefa(descricao)
+    table.insert(tarefas,descricao)
+end
+
+function listar_tarefas()
+    print("listar tarefas:")
+    for indice, tarefa in ipairs(tarefas) do
+        print(indice .. "." .. tarefa)
+    end
+end
+
+adicionar_tarefa("varrer a casa ")
+adicionar_tarefa("lavar a louça")
+adicionar_tarefa("estudar lua")
+adicionar_tarefa("comida do gato e agua")
+adicionar_tarefa("arrumar a cama")
+listar_tarefas()
